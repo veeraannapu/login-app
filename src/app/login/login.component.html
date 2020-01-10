@@ -1,0 +1,19 @@
+<form class="login-form">
+    <mat-form-field>
+      <input matInput placeholder="UserName" [(ngModel)] = "userName" name = "User">
+    </mat-form-field>
+  <br>
+    <mat-form-field>
+      <input matInput placeholder="Password" [(ngModel)] ="password" name = "Password">
+    </mat-form-field>
+    <br>
+    <mat-card-actions>
+        <button mat-raised-button (click)="onLogin()" color="primary">Login</button>
+      </mat-card-actions>
+    </form>
+    <p *ngIf = "isSuccesful">Username Created : {{userName}} <br>
+        Password created  : {{ password}} </p>
+        <br>
+        <p>{{ temp }}</p>
+
+     
